@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{40032C66-EBC9-4A3C-B826-A342C95DEDA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MuntuGUI</RootNamespace>
+    <AssemblyName>MuntuGUI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MuntuGUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MuntuGUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>MuntuGUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>MuntuGUI.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\BlueCheckBox.Designer.vb">
+      <DependentUpon>BlueCheckBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BlueCheckBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CircleIcons.Designer.vb">
+      <DependentUpon>CircleIcons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CircleIcons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CircleTrackBar.Designer.vb">
+      <DependentUpon>CircleTrackBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CircleTrackBar.vb">
+      <SubType>UserControl</SubType>
+      <CustomToolNamespace>MuntuFramework</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Controls\ButtonShadowBox.Designer.vb">
+      <DependentUpon>ButtonShadowBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ButtonShadowBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CircularProgressT.Designer.vb">
+      <DependentUpon>CircularProgressT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CircularProgressT.vb">
+      <SubType>UserControl</SubType>
+      <CustomToolNamespace>MuntuFramework</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Controls\ConversionFunctions.vb" />
+    <Compile Include="Controls\Cool Label.Designer.vb">
+      <DependentUpon>Cool Label.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cool Label.vb">
+      <SubType>UserControl</SubType>
+      <CustomToolNamespace>MuntuFramework</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Controls\CornerBox.Designer.vb">
+      <DependentUpon>CornerBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CornerBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Darkbutton.Designer.vb">
+      <DependentUpon>Darkbutton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Darkbutton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Darkprogressbar.Designer.vb">
+      <DependentUpon>Darkprogressbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Darkprogressbar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GreenMaterialSwitch.Designer.vb">
+      <DependentUpon>GreenMaterialSwitch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GreenMaterialSwitch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Material_LoadingBar.Designer.vb">
+      <DependentUpon>Material_LoadingBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Material_LoadingBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Material_textbox.Designer.vb">
+      <DependentUpon>Material_textbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Material_textbox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Switch.Designer.vb">
+      <DependentUpon>Switch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Switch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DSwitch.Designer.vb">
+      <DependentUpon>DSwitch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DSwitch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FormDark.Designer.vb">
+      <DependentUpon>FormDark.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormDark.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GradientButton.Designer.vb">
+      <DependentUpon>GradientButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GradientButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GradientDiv.Designer.vb">
+      <DependentUpon>GradientDiv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GradientDiv.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GradientProgressbar.Designer.vb">
+      <DependentUpon>GradientProgressbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GradientProgressbar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomSeparator.Designer.vb">
+      <DependentUpon>CustomSeparator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomSeparator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Hscrollbar.Designer.vb">
+      <DependentUpon>Hscrollbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hscrollbar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FormControlBox.Designer.vb">
+      <DependentUpon>FormControlBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormControlBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InvertedSwitch.Designer.vb">
+      <DependentUpon>InvertedSwitch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InvertedSwitch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomRoundForm.Designer.vb">
+      <DependentUpon>CustomRoundForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomRoundForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Cool TrackBar.Designer.vb">
+      <DependentUpon>Cool TrackBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cool TrackBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Material Switch.Designer.vb">
+      <DependentUpon>Material Switch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Material Switch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IconSlot.Designer.vb">
+      <DependentUpon>IconSlot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IconSlot.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewHot.Designer.vb">
+      <DependentUpon>NewHot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewHot.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NotificationIndicator.Designer.vb">
+      <DependentUpon>NotificationIndicator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NotificationIndicator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressIndicator.Designer.vb">
+      <DependentUpon>ProgressIndicator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProgressIndicator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RectShadowBox.Designer.vb">
+      <DependentUpon>RectShadowBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RectShadowBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ShadowBox.Designer.vb">
+      <DependentUpon>ShadowBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShadowBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TickBox.Designer.vb">
+      <DependentUpon>TickBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TickBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controls\CopyProgressbar.Designer.vb">
+      <DependentUpon>CopyProgressbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CopyProgressbar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressCircle.Designer.vb">
+      <DependentUpon>ProgressCircle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProgressCircle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SpinnerCircle.Designer.vb">
+      <DependentUpon>SpinnerCircle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SpinnerCircle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Separator.Designer.vb">
+      <DependentUpon>Separator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Separator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RadioButton.Designer.vb">
+      <DependentUpon>RadioButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RadioButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\VscrollBar.Designer.vb">
+      <DependentUpon>VscrollBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VscrollBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NotificationBox.Designer.vb">
+      <DependentUpon>NotificationBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NotificationBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericBox.Designer.vb">
+      <DependentUpon>NumericBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NumericBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PieChart.Designer.vb">
+      <DependentUpon>PieChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PieChart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\StylishProgressbar.Designer.vb">
+      <DependentUpon>StylishProgressbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StylishProgressbar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TabButton.Designer.vb">
+      <DependentUpon>TabButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TabButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GUI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\DSwitch.resx">
+      <DependentUpon>DSwitch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BlueCheckBox.resx">
+      <DependentUpon>BlueCheckBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CircleIcons.resx">
+      <DependentUpon>CircleIcons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CircleTrackBar.resx">
+      <DependentUpon>CircleTrackBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ButtonShadowBox.resx">
+      <DependentUpon>ButtonShadowBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CircularProgressT.resx">
+      <DependentUpon>CircularProgressT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Cool Label.resx">
+      <DependentUpon>Cool Label.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CornerBox.resx">
+      <DependentUpon>CornerBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Darkbutton.resx">
+      <DependentUpon>Darkbutton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Darkprogressbar.resx">
+      <DependentUpon>Darkprogressbar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GreenMaterialSwitch.resx">
+      <DependentUpon>GreenMaterialSwitch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Material_LoadingBar.resx">
+      <DependentUpon>Material_LoadingBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Material_textbox.resx">
+      <DependentUpon>Material_textbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RadioButton.resx">
+      <DependentUpon>RadioButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Switch.resx">
+      <DependentUpon>Switch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormDark.resx">
+      <DependentUpon>FormDark.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GradientButton.resx">
+      <DependentUpon>GradientButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GradientDiv.resx">
+      <DependentUpon>GradientDiv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GradientProgressbar.resx">
+      <DependentUpon>GradientProgressbar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomSeparator.resx">
+      <DependentUpon>CustomSeparator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hscrollbar.resx">
+      <DependentUpon>Hscrollbar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormControlBox.resx">
+      <DependentUpon>FormControlBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InvertedSwitch.resx">
+      <DependentUpon>InvertedSwitch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomRoundForm.resx">
+      <DependentUpon>CustomRoundForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Cool TrackBar.resx">
+      <DependentUpon>Cool TrackBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Material Switch.resx">
+      <DependentUpon>Material Switch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\IconSlot.resx">
+      <DependentUpon>IconSlot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewHot.resx">
+      <DependentUpon>NewHot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NotificationIndicator.resx">
+      <DependentUpon>NotificationIndicator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProgressIndicator.resx">
+      <DependentUpon>ProgressIndicator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RectShadowBox.resx">
+      <DependentUpon>RectShadowBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ShadowBox.resx">
+      <DependentUpon>ShadowBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TickBox.resx">
+      <DependentUpon>TickBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CopyProgressbar.resx">
+      <DependentUpon>CopyProgressbar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProgressCircle.resx">
+      <DependentUpon>ProgressCircle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SpinnerCircle.resx">
+      <DependentUpon>SpinnerCircle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Separator.resx">
+      <DependentUpon>Separator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VscrollBar.resx">
+      <DependentUpon>VscrollBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NotificationBox.resx">
+      <DependentUpon>NotificationBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NumericBox.resx">
+      <DependentUpon>NumericBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PieChart.resx">
+      <DependentUpon>PieChart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StylishProgressbar.resx">
+      <DependentUpon>StylishProgressbar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabButton.resx">
+      <DependentUpon>TabButton.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\darkx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\lytx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\am.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smartphone11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planets %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planets %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bars.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animation 3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\1b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\1w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc_btn_radio_to_on_mtrl_015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc_btn_radio_to_on_mtrl_000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc_btn_check_to_on_mtrl_015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc_btn_check_to_on_mtrl_000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popupbox_checkbox_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popupbox_checkbox_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sender_sendcomplete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sender_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_nt_music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_nt_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_nt_document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bt_capture_ok_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bt_capture_ok_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_video_preview_closebtn_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documents_icon_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_home_information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\my_studio_more_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_public_shareplay_prevpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_public_shareplay_nextpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v2_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v2_hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobvista_cm_exits_nor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobvista_cm_exits_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attach_video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_updatewhatsapp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\public_evernote_notebook_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_home_member_rice_store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag_normal_left_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag_pressed_left_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_nt_app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_nt_video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_sensitive_permissions_battery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_engines_bing_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_engines_google_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_edit_more_bg.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_search_web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_play_circle_big_normal_o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_msg_fail_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_more_circle_normal_o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_end_call_background_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle_shade_mid.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\input_circle_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\input_circle_green_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_button_background_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\version_unsupported_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_public_document_ppt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_public_shareplay_nextpge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\public_insert_pic_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sliding_down_item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music_setting_volume_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more_apps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobvista_wall_install_ownload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sae.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark shad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share_to_email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag_pressed_right_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag_normal_right_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag_normal_left_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag_normal_right_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag_pressed_left_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\cam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\cam2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\earth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\fyl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\fyl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\ig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\igm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\se.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\setngz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\setng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\del2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\attch2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\attch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\don.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\icons\dn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_homepage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_favorite_download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_musicplayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_media.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_recycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_backup_cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_play_fastforward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_setbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_view_icon_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history_pic_mine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_public_search_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_public_searchtitlebar_more_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_ss_backboard_phone_hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_writer_share_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\public_fb_showall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share_reset_editor_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_addressbar_access_land.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_category_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_charset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\menuw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\uplo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\del2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\cam2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\caht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\attch2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_public_toggle_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_public_toggle_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_all_media.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_edit_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_add_pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_nmg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attach_location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoji_people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ib_emoji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music_setting_loop_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music_setting_loop_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\public_insert_pic_unselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_junk_icon_scan_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_screen_notif_access_check.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
